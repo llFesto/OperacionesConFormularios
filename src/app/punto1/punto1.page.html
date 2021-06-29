@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Descuento</ion-title>
+    <ion-buttons  slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <h3>Descuento</h3>
+  </div>
+
+  <div *ngIf= "id2 < 74">
+    <p>Valor del producto: {{valorI}}</p>
+    <P>Valor total con descuento: {{resultado}}</P>
+  </div>
+
+  <div *ngIf= "id2 >= 74">
+    <p>Valor del producto: {{valorI}}</p>
+    <P>Valor con descuento: {{resultado2}}</P>
+  </div>
+
+</ion-content>

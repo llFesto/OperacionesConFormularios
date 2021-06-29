@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Banco</ion-title>
+    <ion-buttons  slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <h3>Banco</h3>
+    <p>Interes: {{valorI * porcentaje2}}</p>
+  </div>
+
+  <form>
+    <ion-card-content>
+      <ion-label position="stacked">Monto anual + 2% Interes</ion-label>
+    </ion-card-content>
+
+    <ion-button (click)="Interes()" color="light" expand="full">Calcular</ion-button>
+  </form>
+
+  <div class="ion-padding">
+    <ion-card-content>
+      <p>Cantidad de dinero anual: {{valorI}}</p>
+    </ion-card-content>
+  </div>
+
+</ion-content>
